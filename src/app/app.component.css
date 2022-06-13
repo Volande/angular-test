@@ -1,0 +1,12 @@
+a {
+  border: 1px solid blue;
+  border-radius:3px ;
+  background-color: blue;
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+  background-color: #2c3a41;
+  border-color: #2c3a41;
+  color:white;
+}
