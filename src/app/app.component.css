@@ -1,12 +1,8 @@
-h1 {
-
-  font-family: 'Casual Friday', sans-serif;
-  color: black;
-  font-size: 1.5em;
-  text-align: center;
-  padding: 0 150px;
-  margin: 0
+* {
+  margin: 0;
+  padding: 0;
 }
+
 
 a {
   color: black
@@ -21,9 +17,11 @@ a:hover, a:link {
   margin: 3px;
   font-weight: bold;
 }
-
-
-
+header{
+  position:fixed;
+  top: 0;
+  left: 0;
+}
 
 .class a:hover, a:link {
   font-weight: normal;
@@ -33,34 +31,36 @@ a:hover, a:link {
   display: none;
 }
 
-.menu__item1 {
+h1 .menu__item1 {
 
   text-align: center;
+  font-family: 'Casual Friday', sans-serif;
+  color: black;
+  font-size: 1.5em;
+
+  margin: 0
 
 }
 
-header {
-  width: 100%;
-  position: fixed;
-}
 
-.nav-menu {
+
+.menuh{
   list-style: none;
   display: flex;
   justify-content: space-between;
   margin-left: 10px;
-  margin-left: 10px;
   margin-right: 10px;
   padding: 0;
   align-items: center;
+
 }
 
 .menu1 {
   list-style: none;
   display: flex;
   justify-content: space-between;
-
   align-items: center;
+  padding-right: 80px;
 }
 
 .menu2 {
@@ -69,6 +69,7 @@ header {
   justify-content: space-between;
   margin-left: 80px;
   align-items: center;
+  padding: 0 195px
 }
 
 .menu3 {
@@ -92,19 +93,28 @@ header {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 
 }
 
 .contant {
-  padding-top: 40px;
-  padding-bottom:100px;
+  padding-top: 65px;
+  display: table-row;
+  height: 100%;
 }
-
-
+.wrapper {
+  display: table;
+  height: 100%;
+}
+.nav-menu{
+  display: none;
+}
+.burger{
+  display: flex;
+}
 @media screen and (max-width: 750px) {
+  .menuh{
+    display: none;
+  }
   .menu1{
     display: flex;
     justify-content: center;
@@ -121,21 +131,23 @@ header {
     align-content: flex-start;
     flex-direction: column;
     margin-left: 20px;
+
   }
 
   .nav-menu {
-    height: 100%;
+
   }
 
   .downf {
-    position: absolute;
-    bottom: 200px;
-    right: 100px;
+
 
   }
 
   .logo {
-    display: block;
+    display: flex;
+    padding-left: 150px;
+    padding-right: 0;
+
   }
 
   .footerpage1 {
@@ -202,7 +214,7 @@ header {
     top: 0;
     left: -100%;
     width: 300px;
-
+    height: 100%;
     margin: 0;
     padding: 80px 0;
     list-style: none;
